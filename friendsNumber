@@ -1,0 +1,50 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        int number1 = 220;
+        int number2 = 284;
+        int kalan1 = 0;
+        int kalan2 = 0;
+        int bölen1;
+        int bölüm1;
+        int bölen2;
+        int bölüm2;
+        int toplam1 = 0;
+        int toplam2 = 0;
+
+        for (int i = 1; i < number1; i++) {
+            bölüm1 = (number1 / i);
+            kalan1 = number1 - (bölüm1 * i);
+
+            if (kalan1 == 0) {
+                bölen1 = i;
+                toplam1 = toplam1 + i;
+                System.out.println("1.Sayının Böleni: " + bölen1);
+
+            }
+
+        }
+        for (int j = 1; j < number2; j++) {
+            bölüm2 = (number2 / j);
+            kalan2 = number2 - (bölüm2 * j);
+
+            if (kalan2 == 0) {
+                bölen2 = j;
+                toplam2 = toplam2 + j;
+                System.out.println("2.Sayının Böleni: " + bölen2);
+
+            }
+
+        }
+        System.out.println(("220'i Bölenlerin toplamı: " + toplam1));
+        System.out.println(("284'ü Bölenlerin toplamı: " + toplam2));
+
+        if (toplam1 == number2 && toplam2 == number1) {
+            System.out.println("Arkadaş Sayılar.");
+        } else {
+            System.out.println("Arkadaş Sayılar Değildir.");
+        }
+    }
+}
+
