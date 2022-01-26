@@ -1,0 +1,28 @@
+public class Main {
+
+    public static void main(String[] args) {
+        int number = 28;
+        int kalan = 0;
+        int bölen;
+        int bölüm;
+        int toplam = 0;
+
+        for (int i=1; i<number; i++){
+            bölüm = (number/i) ;
+            kalan = number - (bölüm*i);
+
+            if(kalan == 0){
+                bölen = i;
+                toplam = toplam + i;
+                System.out.println("Bölen: " +bölen);
+                ;
+            }
+        }
+        System.out.println(("Bölenlerin toplamı: " +toplam ));
+        if(toplam == number){
+            System.out.println("Sayı mükemmel sayıdır.");
+        }else{
+            System.out.println("Sayı mükemmel sayı dağildir.");
+        }
+    }
+}
